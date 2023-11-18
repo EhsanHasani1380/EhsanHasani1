@@ -1,0 +1,10 @@
+^C:\USERS\EHSAN\DOCUMENTS\VISUAL STUDIO 2022\SOURCES\J01\BUILD\CMAKEFILES\D3986041F200F726086D5EAB2B039143\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/Ehsan/Documents/Visual Studio 2022/sources/j01" "-BC:/Users/Ehsan/Documents/Visual Studio 2022/sources/j01/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Ehsan/Documents/Visual Studio 2022/sources/j01/build/Jalase01.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
